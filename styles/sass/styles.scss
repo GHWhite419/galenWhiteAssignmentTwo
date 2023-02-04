@@ -1,2 +1,3 @@
-@use "setup.scss"; // Setup snippet
-@use "universal.scss"; // Universal stylings
+@use "./partials/setup.scss"; // Setup snippet
+@use "./partials/variables.scss" as *; //Variables
+@use "./partials/universal.scss" as *; // Universal stylings

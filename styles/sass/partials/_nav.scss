@@ -1,0 +1,55 @@
+@use "./variables.scss" as *;
+
+.navBar {
+    display: none;
+}
+
+.navMenu {
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: $secondary;
+    width: 0;
+    transition: .4s;
+
+    &:target {
+        width: 50vw;
+        box-shadow: 0 0 0 10000px rgba(0, 0, 0, .50);
+    }
+
+    .navMenuClose {
+        position: relative;
+        top: .6rem;
+        left: .6rem;
+    }
+
+    li {
+        padding: .8rem;
+    }
+
+    a {
+        color: $accent;
+    }
+}
+
+.activePage a {
+    color: $primary;
+    pointer-events: none;
+}
+
+li {
+    position: relative;
+
+    span {
+        position: absolute;
+        background-color: $primary;
+        color: $secondary;
+        border-radius: 100%;
+        padding: .2rem .5rem;
+        font-size: .8rem;
+        bottom: 0;
+        left: 1rem;
+        font-family: $headingFont;
+    }
+}

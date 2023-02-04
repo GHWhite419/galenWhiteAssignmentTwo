@@ -250,7 +250,7 @@ a {
 }
 
 hr {
-  color: #6B8E23;
+  color: #64A604;
 }
 
 body {
@@ -272,4 +272,59 @@ h2 {
   line-height: 1.2rem;
   letter-spacing: 0.1px;
   font-size: 1.2rem;
+}
+
+a {
+  font-family: "Raleway", sans-serif;
+}
+
+.navBar {
+  display: none;
+}
+
+.navMenu {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #F6F6F6;
+  width: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.navMenu:target {
+  width: 50vw;
+  -webkit-box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+}
+.navMenu .navMenuClose {
+  position: relative;
+  top: 0.6rem;
+  left: 0.6rem;
+}
+.navMenu li {
+  padding: 0.8rem;
+}
+.navMenu a {
+  color: #333;
+}
+
+.activePage a {
+  color: #64A604;
+  pointer-events: none;
+}
+
+li {
+  position: relative;
+}
+li span {
+  position: absolute;
+  background-color: #64A604;
+  color: #F6F6F6;
+  border-radius: 100%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  bottom: 0;
+  left: 1rem;
+  font-family: "Raleway", sans-serif;
 }

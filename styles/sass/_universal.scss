@@ -1,0 +1,29 @@
+.wrapper {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+hr {
+    color: $primary;
+}
+
+// Typography
+body {
+    font-family: $baseFont;
+}
+
+h1, h2, h3 {
+    font-family: $headingFont;
+}

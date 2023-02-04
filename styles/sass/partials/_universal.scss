@@ -41,4 +41,8 @@ h2 {
 
 a {
     font-family: $headingFont;
+    color: $accent;
+    &:active {
+        color: $primary;
+    }
 }

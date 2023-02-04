@@ -276,6 +276,10 @@ h2 {
 
 a {
   font-family: "Raleway", sans-serif;
+  color: #333;
+}
+a:active {
+  color: #64A604;
 }
 
 .navBar {
@@ -304,9 +308,6 @@ a {
 }
 .navMenu li {
   padding: 0.8rem;
-}
-.navMenu a {
-  color: #333;
 }
 
 .activePage a {

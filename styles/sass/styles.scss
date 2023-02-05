@@ -6,3 +6,6 @@
 @use "./partials/header.scss"; // Header
 @use "./partials/footer.scss"; // Footer
 @use "./partials/footerWide.scss"; // Footer on large screens
+
+// Home
+@use "./partials/index/recipes.scss"; // Recipes section

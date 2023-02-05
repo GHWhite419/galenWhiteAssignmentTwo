@@ -23,6 +23,12 @@ a {
 
 hr {
     color: $primary;
+    width: 2rem;
+    border: 2px solid;
+}
+
+button:active {
+    filter: brightness(1.1);
 }
 
 // Typography
@@ -52,6 +58,7 @@ a {
     font-family: $headingFont;
     color: $accent;
     font-weight: 700;
+
     &:active {
         color: $primary;
     }

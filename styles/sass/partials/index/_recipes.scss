@@ -1,0 +1,85 @@
+@use "../variables.scss" as *;
+
+.recipes {
+    figure {
+        margin: 0;
+    }
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    button {
+        @include bodyStyle;
+        background-color: $primary;
+        color: $secondary;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+        border-style: none;
+        font-size: .6rem;
+        font-weight: 700;
+        margin: 1.5rem auto;
+        padding: .4rem 2.5rem;
+    }
+
+    li {
+        .recipeCategory {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            h3 {
+                padding-right: 1rem;
+                text-transform: uppercase;
+            }
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+        p {
+            text-align: left;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    img {
+        max-height: 14rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .recipes {
+        article {
+            display: flex;
+            &:first-child {
+                flex-direction: row-reverse;
+            }
+            figure {
+                width: 50%;
+            }
+            .wrapper {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                background-color: $secondary;
+                margin: 0;
+                li {
+                    width: 40%;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

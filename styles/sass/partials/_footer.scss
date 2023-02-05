@@ -72,10 +72,6 @@ footer {
                 border-style: none;
                 padding: 0rem .6rem;
 
-                &:active {
-                    filter: brightness(1.1);
-                }
-
                 i {
                     color: $secondary;
                 }

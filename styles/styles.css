@@ -251,6 +251,13 @@ a {
 
 hr {
   color: #64A604;
+  width: 2rem;
+  border: 2px solid;
+}
+
+button:active {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
 }
 
 body {
@@ -516,10 +523,6 @@ footer .subscribe form button {
   border-style: none;
   padding: 0rem 0.6rem;
 }
-footer .subscribe form button:active {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-}
 footer .subscribe form button i {
   color: #F6F6F6;
 }
@@ -578,5 +581,102 @@ footer .copyright span {
   .footerContent .subscribe {
     margin-top: 2rem;
     width: 28%;
+  }
+}
+.recipes figure {
+  margin: 0;
+}
+.recipes h2,
+.recipes p {
+  text-align: center;
+}
+.recipes button {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.5px;
+  background-color: #64A604;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  padding: 0.4rem 2.5rem;
+}
+.recipes li .recipeCategory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.recipes li .recipeCategory h3 {
+  padding-right: 1rem;
+  text-transform: uppercase;
+}
+.recipes li .recipeCategory i {
+  font-size: 1.5rem;
+}
+.recipes li p {
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  img {
+    max-height: 14rem;
+  }
+}
+@media (min-width: 900px) {
+  .recipes article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .recipes article:first-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .recipes article figure {
+    width: 50%;
+  }
+  .recipes article .wrapper {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .recipes article ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    background-color: #F6F6F6;
+    margin: 0;
+  }
+  .recipes article ul li {
+    width: 40%;
+  }
+  .recipes article ul li p {
+    margin: 0;
   }
 }

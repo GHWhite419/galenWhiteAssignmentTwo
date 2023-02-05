@@ -1,0 +1,89 @@
+@use "./variables.scss" as *;
+
+header {
+    height: 75vh;
+    background-size: cover;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            margin: 0;
+            padding: 1rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .navMenuToggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+        }
+
+        li {
+            position: relative;
+
+            span {
+                position: absolute;
+                background-color: $primary;
+                color: $secondary;
+                border-radius: 100%;
+                padding: .1rem .4rem;
+                font-size: .8rem;
+                font-family: $headingFont;
+            }
+        }
+    }
+}
+
+.indexHeader {
+    background-image: url('../assets/home-1.jpeg');
+}
+
+@media(max-width: 900px) {
+    header {
+        &.indexHeader {
+            background-position: -34rem;
+        }
+
+        .navBar {
+            display: none;
+        }
+
+        span {
+            bottom: 0.2rem;
+            left: 1rem;
+        }
+    }
+}
+
+@media(min-width: 900px) {
+    header {
+        height: 100vh;
+
+        .navBar {
+            position: absolute;
+            right: 1rem;
+
+            ul {
+                display: flex;
+
+                li {
+                    padding-right: 1rem;
+
+                    span {
+                        top: .5rem;
+                        left: .2rem;
+                    }
+                }
+            }
+        }
+
+        .navMenuToggle {
+            display: none;
+        }
+    }
+}

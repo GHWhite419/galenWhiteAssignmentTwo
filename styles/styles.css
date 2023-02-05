@@ -282,10 +282,6 @@ a:active {
   color: #64A604;
 }
 
-.navBar {
-  display: none;
-}
-
 .navMenu {
   height: 100%;
   position: fixed;
@@ -295,6 +291,7 @@ a:active {
   width: 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  z-index: 10;
 }
 .navMenu:target {
   width: 50vw;
@@ -315,17 +312,81 @@ a:active {
   pointer-events: none;
 }
 
-li {
+header {
+  height: 75vh;
+  background-size: cover;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .wrapper h1 {
+  margin: 0;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .wrapper .navMenuToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+}
+header .wrapper li {
   position: relative;
 }
-li span {
+header .wrapper li span {
   position: absolute;
   background-color: #64A604;
   color: #F6F6F6;
   border-radius: 100%;
-  padding: 0.2rem 0.5rem;
+  padding: 0.1rem 0.4rem;
   font-size: 0.8rem;
-  bottom: 0;
-  left: 1rem;
   font-family: "Raleway", sans-serif;
+}
+
+.indexHeader {
+  background-image: url("../assets/home-1.jpeg");
+}
+
+@media (max-width: 900px) {
+  header.indexHeader {
+    background-position: -34rem;
+  }
+  header .navBar {
+    display: none;
+  }
+  header span {
+    bottom: 0.2rem;
+    left: 1rem;
+  }
+}
+@media (min-width: 900px) {
+  header {
+    height: 100vh;
+  }
+  header .navBar {
+    position: absolute;
+    right: 1rem;
+  }
+  header .navBar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navBar ul li {
+    padding-right: 1rem;
+  }
+  header .navBar ul li span {
+    top: 0.5rem;
+    left: 0.2rem;
+  }
+  header .navMenuToggle {
+    display: none;
+  }
 }

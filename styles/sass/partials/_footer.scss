@@ -102,7 +102,7 @@ footer {
 
     .copyright {
         background-color: #262626;
-        padding: .8rem;
+        padding: .8rem 0rem;
 
         p {
             font-family: $headingFont;
@@ -112,5 +112,11 @@ footer {
             color: $primary;
             text-transform: uppercase;
         }
+    }
+}
+
+@media (max-width: 900px) {
+    .copyright p {
+        text-align: center;
     }
 }

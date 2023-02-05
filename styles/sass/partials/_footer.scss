@@ -1,0 +1,116 @@
+@use "./variables" as *;
+
+footer {
+    background-color: $footerColor;
+
+    h2 {
+        font-size: 2rem;
+        color: $primary;
+        padding-top: 2rem;
+    }
+
+    h3 {
+        @include footerHeading;
+    }
+
+    p {
+        margin: 0;
+        font-size: .6rem;
+    }
+
+    li {
+        @include bodyText;
+        color: $tertiary;
+        border-top: 1px solid $tertiary;
+        padding: .5rem 0;
+        font-size: .6rem;
+    }
+
+    ul:first-of-type p:first-of-type {
+        padding-bottom: .8rem;
+    }
+
+    ul:last-of-type {
+        li:active {
+            color: $primary;
+        }
+
+        li:first-of-type {
+            border-top-color: $footerColor;
+
+        }
+    }
+
+    .subscribe {
+        form {
+            display: flex;
+            margin-top: 1rem;
+
+            input {
+                background-color: #696969;
+                border-style: none;
+                padding: .4rem;
+                @include bodyText;
+                color: $secondary;
+                font-size: .6rem;
+                width: 80%;
+
+                &::placeholder {
+                    @include bodyText;
+                    color: $secondary;
+                    font-size: .6rem;
+                    font-style: italic;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            button {
+                background-color: $primary;
+                border-style: none;
+                padding: 0rem .6rem;
+
+                &:active {
+                    filter: brightness(1.1);
+                }
+
+                i {
+                    color: $secondary;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+
+            li {
+                border-top: $footerColor;
+                margin-right: 1rem;
+
+                i {
+                    font-size: 1rem;
+
+                    &:active {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background-color: #262626;
+        padding: .8rem;
+
+        p {
+            font-family: $headingFont;
+        }
+
+        span {
+            color: $primary;
+            text-transform: uppercase;
+        }
+    }
+}

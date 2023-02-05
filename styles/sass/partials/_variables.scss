@@ -1,8 +1,9 @@
 $primary: #64A604;
 $secondary: #F6F6F6;
 $tertiary: #999999;
-$accent: #333;
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap');
+$accent: #2E2E2E;
+$footerColor: #333;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap');
 
 $baseFont: 'Lora', serif;
 $headingFont: 'Raleway', sans-serif;
@@ -30,4 +31,19 @@ $headingFont: 'Raleway', sans-serif;
     text-transform: uppercase;
     line-height: 1.2rem;
     letter-spacing: .5px;
+    color: $secondary;
+}
+
+@mixin bodyStyle {
+    font-family: $headingFont;
+    font-size: .9rem;
+    line-height: 1.8rem;
+    letter-spacing: .5px;
+}
+
+@mixin bodyText {
+    font-family: $baseFont;
+    font-size: .7rem;
+    line-height: 1.2rem;
+    letter-spacing: .3px;
 }

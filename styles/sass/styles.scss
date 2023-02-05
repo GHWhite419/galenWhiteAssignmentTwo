@@ -2,6 +2,7 @@
 @use "./partials/variables.scss" as *; // Variables
 @use "./partials/universal.scss" as *; // Universal stylings
 
-@use "./partials/nav"; // Stylings for nav menu and nav bar
-@use "./partials/header"; // Header
-@use "./partials/footer"; // Footer
+@use "./partials/nav.scss"; // Stylings for nav menu and nav bar
+@use "./partials/header.scss"; // Header
+@use "./partials/footer.scss"; // Footer
+@use "./partials/footerWide.scss"; // Footer on large screens

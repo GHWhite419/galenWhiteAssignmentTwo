@@ -39,9 +39,19 @@ h2 {
     font-size: 1.2rem;
 }
 
+h3 {
+    @include bodyStyle;
+}
+
+p {
+    @include bodyText;
+    color: $tertiary;
+}
+
 a {
     font-family: $headingFont;
     color: $accent;
+    font-weight: 700;
     &:active {
         color: $primary;
     }

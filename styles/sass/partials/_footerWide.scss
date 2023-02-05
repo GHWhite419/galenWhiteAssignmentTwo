@@ -1,5 +1,25 @@
 @media (min-width: 900px) {
     .footerContent {
         display: flex;
+        justify-content: space-between;
+
+        ul {
+            width: 32%;
+            margin-top: 2rem;
+        }
+
+        h2 {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        h3 {
+            margin-top: 0;
+        }
+
+        .subscribe {
+            margin-top: 2rem;
+            width: 28%;
+        }
     }
 }

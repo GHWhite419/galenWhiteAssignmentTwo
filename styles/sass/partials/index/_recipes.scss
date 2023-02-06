@@ -29,10 +29,12 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             h3 {
                 padding-right: 1rem;
                 text-transform: uppercase;
             }
+
             i {
                 font-size: 1.5rem;
             }
@@ -54,12 +56,19 @@
     .recipes {
         article {
             display: flex;
+
             &:first-child {
                 flex-direction: row-reverse;
+                p {
+                    max-width: 80%;
+                    align-self: center;
+                }
             }
+
             figure {
                 width: 50%;
             }
+
             .wrapper {
                 width: 50%;
                 display: flex;
@@ -74,12 +83,22 @@
                 background-color: $secondary;
                 margin: 0;
                 height: 100%;
+                padding-left: 2rem;
+
                 li {
                     width: 40%;
                     position: relative;
+
                     h3 {
                         margin-bottom: 0;
                     }
+
+                    i {
+                        position: absolute;
+                        left: -2.6rem;
+                        top: 1.1rem;
+                    }
+
                     p {
                         margin: 0;
                         font-size: .6rem;

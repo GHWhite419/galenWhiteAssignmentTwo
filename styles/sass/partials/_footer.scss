@@ -7,6 +7,7 @@ footer {
         font-size: 2rem;
         color: $primary;
         padding-top: 2rem;
+        margin-top: 0;
     }
 
     h3 {
@@ -26,8 +27,12 @@ footer {
         font-size: .6rem;
     }
 
-    ul:first-of-type p:first-of-type {
-        padding-bottom: .8rem;
+    ul:first-of-type {
+        margin-top: 0;
+
+        p:first-of-type {
+            padding-bottom: .8rem;
+        }
     }
 
     ul:last-of-type {

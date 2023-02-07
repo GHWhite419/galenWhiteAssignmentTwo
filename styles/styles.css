@@ -425,6 +425,7 @@ footer h2 {
   font-size: 2rem;
   color: #64A604;
   padding-top: 2rem;
+  margin-top: 0;
 }
 footer h3 {
   font-family: "Raleway", sans-serif;
@@ -447,6 +448,9 @@ footer li {
   border-top: 1px solid #999999;
   padding: 0.5rem 0;
   font-size: 0.6rem;
+}
+footer ul:first-of-type {
+  margin-top: 0;
 }
 footer ul:first-of-type p:first-of-type {
   padding-bottom: 0.8rem;
@@ -719,4 +723,35 @@ footer .copyright span {
 
 .gallery ul {
   margin-top: 0;
+  padding-bottom: 0;
+}
+
+.testimonial {
+  text-align: center;
+  background-color: #DDED9A;
+  padding: 1rem;
+}
+.testimonial h2 {
+  margin: 0;
+  padding: 1rem;
+}
+.testimonial li {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+.testimonial i {
+  color: #F6F6F6;
+}
+.testimonial .quote {
+  position: relative;
+}
+.testimonial .quote .fa-quote-left {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+}
+.testimonial .quote .fa-quote-right {
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
 }

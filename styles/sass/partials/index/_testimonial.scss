@@ -1,0 +1,37 @@
+@use "../variables.scss" as *;
+
+.testimonial {
+    text-align: center;
+    background-color: #DDED9A;
+    padding: 1rem;
+
+    h2 {
+        margin: 0;
+        padding: 1rem;
+    }
+
+    li {
+        display: inline;
+        padding: 0rem .5rem;
+    }
+
+    i {
+        color: $secondary;
+    }
+
+    .quote {
+        position: relative;
+
+        .fa-quote-left {
+            position: absolute;
+            top: -2rem;
+            left: 0;
+        }
+
+        .fa-quote-right {
+            position: absolute;
+            bottom: -2rem;
+            right: 0;
+        }
+    }
+}

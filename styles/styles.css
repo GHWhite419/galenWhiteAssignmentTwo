@@ -234,6 +234,11 @@ html {
   margin: 0 auto;
 }
 
+figure {
+  margin: 0;
+  position: relative;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -583,9 +588,6 @@ footer .copyright span {
     width: 28%;
   }
 }
-.recipes figure {
-  margin: 0;
-}
 .recipes h2,
 .recipes p {
   text-align: center;
@@ -605,6 +607,9 @@ footer .copyright span {
   font-weight: 700;
   margin: 1.5rem auto;
   padding: 0.4rem 2.5rem;
+}
+.recipes article:last-child {
+  background-color: #F6F6F6;
 }
 .recipes li .recipeCategory {
   display: -webkit-box;
@@ -631,6 +636,10 @@ footer .copyright span {
 @media (max-width: 900px) {
   img {
     max-height: 14rem;
+  }
+  ul {
+    padding-bottom: 1rem;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 900px) {
@@ -675,7 +684,6 @@ footer .copyright span {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    background-color: #F6F6F6;
     margin: 0;
     height: 100%;
     padding-left: 2rem;
@@ -696,4 +704,19 @@ footer .copyright span {
     margin: 0;
     font-size: 0.6rem;
   }
+}
+.restaurants {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+.restaurants .stamp {
+  position: absolute;
+  max-width: 5rem;
+  top: -2rem;
+  right: -1rem;
+}
+
+.gallery ul {
+  margin-top: 0;
 }

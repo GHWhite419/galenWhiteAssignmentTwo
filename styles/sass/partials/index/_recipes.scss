@@ -1,10 +1,6 @@
 @use "../variables.scss" as *;
 
 .recipes {
-    figure {
-        margin: 0;
-    }
-
     h2,
     p {
         text-align: center;
@@ -23,7 +19,9 @@
         margin: 1.5rem auto;
         padding: .4rem 2.5rem;
     }
-
+article:last-child {
+    background-color: $secondary;
+}
     li {
         .recipeCategory {
             display: flex;
@@ -49,6 +47,10 @@
 @media (max-width: 900px) {
     img {
         max-height: 14rem;
+    }
+    ul {
+        padding-bottom: 1rem;
+        margin-bottom: 0;
     }
 }
 
@@ -80,7 +82,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
-                background-color: $secondary;
                 margin: 0;
                 height: 100%;
                 padding-left: 2rem;

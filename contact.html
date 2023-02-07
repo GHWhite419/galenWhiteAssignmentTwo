@@ -1,12 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious - Contact</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    
+    <header class="blogHeader">
+        <div class="wrapper">
+            <h1>Delicious</h1>
+            <!-- Mobile / Small screen nav -->
+            <!-- Opens nav menu -->
+            <a href="#navMenu" id="navMenuToggle" class="navMenuToggle">
+                <span class="sr-only">Open navigation menu</span>
+                <i class="fa-solid fa-bars fa-2xl" aria-hidden="true"></i>
+            </a>
+            <!-- Start of nav menu -->
+            <nav id="navMenu" class="navMenu">
+                <!-- Closes nav menu -->
+                <a href="#navMenuToggle" id="navMenuClose" class="navMenuClose">
+                    <span class="sr-only">Close navigation menu</span>
+                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                </a>
+                <!-- Site links -->
+                <h2 id="navHeading" class="sr-only">Site navigation</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Recipes</a></li>
+                    <li><a href="">Nutrition</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li class="activePage"><a href="">Contact</a></li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        <span>2</span>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- PC / Large screen nav -->
+            <nav class="navBar">
+                <h2 id="navHeading" class="sr-only">Site navigation</h2>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Recipes</a></li>
+                    <li><a href="">Nutrition</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li class="activePage"><a href="">Contact</a></li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        <span>2</span>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <form action="">
+                <h2>Drop us a line</h2>
+                <input type="text" placeholder="Your name" id="contactName" contact="contactName">
+                <input type="email" placeholder="Your email" id="contactEmail" contact="contactEmail">
+                <input type="text" placeholder="Subject" id="subject" contact="subject">
+                <input type="text" placeholder="Message" id="contactMessage" contact="contactMessage">
+                <button type="button">Send message <i class="fa-sharp fa-solid fa-right-long"></i></button>
+            </form>
+            <section class="contact">
+                <h2>Contact details</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero suscipit temporibus nulla laborum
+                    nesciunt ratione nemo velit reiciendis cum ex?</p>
+                <div class="hours">
+                    <p>
+                        <span aria-hidden="true">Mon - Fri :</span>
+                        <span class="sr-only">Monday to Friday</span>
+                        08:00am - 05:30pm
+                    </p>
+                    <em>Not working on Saturday and Sunday!</em>
+                </div>
+                <ul>
+                    <h2>Contact info</h2>
+                    <li>A delicious restaurant <br>
+                        Toronto, Ontario</li>
+                    <li>yum@food.com</li>
+                    <li>+1 234 567 8910</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="banner"></div>
+    </main>
+
+    <footer>
+        <div class="wrapper footerContent">
+            <ul>
+                <h2>Delicious</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem excepturi quo similique
+                    accusantium vitae ab tempore soluta at.</p>
+                <li>
+                    <p>A delicious restaurant</p>
+                    <p>Toronto, Ontario</p>
+                </li>
+                <li>
+                    yum@food.com
+                </li>
+                <li>
+                    +1 234 567 8910
+                </li>
+            </ul>
+            <ul>
+                <h3>Recent Posts</h3>
+                <li>Beetroot water spinach okra water</li>
+                <li>Chestnut ricebean pea catsear corgette</li>
+                <li>Summer purslane spinach arugula pea</li>
+                <li>Tatsoi abuergine spring onion bush</li>
+                <li>Tomato kale radicchio turnip chicory</li>
+                <li>Salsify pea sprouts fava bean</li>
+            </ul>
+            <div class="subscribe">
+                <h3>Subscribe now</h3>
+                <p>Get all of our newest recipes immediately in your inbox!</p>
+                <form action="">
+                    <input type="email" placeholder="Enter your email">
+                    <button type="button">
+                        <i class="fa-sharp fa-solid fa-right-long"></i>
+                    </button>
+                </form>
+                <ul>
+                    <li>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                    <li>
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="wrapper">
+                <p>
+                    Copyrights &#169 2015 by <span>Polar.</span> All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/e4f1610b04.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

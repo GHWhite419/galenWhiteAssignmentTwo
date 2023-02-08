@@ -43,10 +43,18 @@ header {
     background-image: url('../assets/home-1.jpeg');
 }
 
+.blogHeader {
+    background-image: url('../assets/blog-1.jpeg');
+}
+
 @media(max-width: 900px) {
     header {
         &.indexHeader {
             background-position: -34rem;
+        }
+        
+        &.blogHeader {
+            background-position: -27rem;
         }
 
         .navBar {

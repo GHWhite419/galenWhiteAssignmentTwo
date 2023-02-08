@@ -1,0 +1,39 @@
+@use "../variables.scss" as *;
+
+.pineapple {
+    h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 0;
+    }
+
+    .byline {
+        font-family: $headingFont;
+        color: $footerColor;
+    }
+    .tags {
+        border-top: 1px solid $tertiary;
+        border-bottom: 1px solid $tertiary;
+        margin: 2rem 0rem;
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            max-height: 2.5rem;
+            h3:first-child {
+                padding-right: .25rem;
+            }
+    
+            li {
+                font-size: .7rem;
+                color: $tertiary;
+                padding: .1rem;
+                i {
+                    padding: .5rem;
+                }
+            }
+        }
+    }
+}

@@ -771,6 +771,9 @@ footer .copyright span {
   margin-top: 3rem;
   margin-bottom: 0;
 }
+.pineapple p {
+  color: #333;
+}
 .pineapple .byline {
   font-family: "Raleway", sans-serif;
   color: #333;

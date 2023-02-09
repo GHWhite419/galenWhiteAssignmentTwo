@@ -805,3 +805,7 @@ footer .copyright span {
 .pineapple .tags ul li i {
   padding: 0.5rem;
 }
+
+.author {
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+@use "../variables" as *;
+
+.related {
+    border-top: 1px solid $tertiary;
+    border-bottom: 1px solid $tertiary;
+    margin-top: 2rem;
+    padding-top: 1rem;
+
+    h2 {
+        text-align: center;
+    }
+
+    li {
+        margin: 1rem 0rem;
+
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        span {
+            text-transform: capitalize;
+            font-family: $headingFont;
+            font-weight: 700;
+        }
+    }
+
+}

@@ -830,25 +830,27 @@ footer .copyright span {
 }
 
 .related {
+  margin-top: 2rem;
+}
+.related .wrapper {
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
-  margin-top: 2rem;
   padding-top: 1rem;
 }
-.related h2 {
+.related .wrapper h2 {
   text-align: center;
 }
-.related li {
+.related .wrapper li {
   margin: 1rem 0rem;
 }
-.related li h3 {
+.related .wrapper li h3 {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.related li p {
+.related .wrapper li p {
   margin: 0;
 }
-.related li span {
+.related .wrapper li span {
   text-transform: capitalize;
   font-family: "Raleway", sans-serif;
   font-weight: 700;

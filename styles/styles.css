@@ -809,3 +809,19 @@ footer .copyright span {
 .author {
   text-align: center;
 }
+.author figure {
+  background: #F6F6F6;
+  padding-top: 2.5rem;
+}
+.author figure img {
+  max-width: 11rem;
+  margin: 0 auto;
+}
+.author article {
+  background-color: #F6F6F6;
+  padding: 0.5rem;
+}
+.author h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}

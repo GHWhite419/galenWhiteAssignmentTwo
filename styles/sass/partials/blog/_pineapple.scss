@@ -26,10 +26,14 @@
             margin: 0;
             padding: 0;
             max-height: 2.5rem;
-            h3:first-child {
-                padding-right: .25rem;
+            h3 {
+                text-transform: uppercase;
+                &:first-child {
+                    padding-right: .25rem;
+                }
+        
             }
-    
+     
             li {
                 font-size: .7rem;
                 color: $tertiary;

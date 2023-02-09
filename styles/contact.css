@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@400;700&display=swap");
+.contactForm input {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}

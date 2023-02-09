@@ -386,12 +386,19 @@ header .wrapper li span {
   background-image: url("../assets/blog-1.jpeg");
 }
 
+.contactHeader {
+  background-image: url("../assets/contact-1.jpeg");
+}
+
 @media (max-width: 900px) {
   header.indexHeader {
     background-position: -34rem;
   }
   header.blogHeader {
     background-position: -27rem;
+  }
+  header.contactHeader {
+    background-position: -38rem;
   }
   header .navBar {
     display: none;
@@ -914,7 +921,12 @@ footer .copyright span {
   font-family: "Lora", serif;
   font-size: 0.7rem;
 }
-.comments .writeMessage .blogComment {
+.comments .writeMessage textarea {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
   height: 10rem;
 }
 .comments .writeMessage button {
@@ -931,5 +943,63 @@ footer .copyright span {
   font-size: 0.6rem;
   font-weight: 700;
   margin: 1.5rem auto;
+  padding: 0.4rem 2.5rem;
+}
+
+.contactForm input {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  background-color: #F6F6F6;
+  border-color: #F6F6F6;
+  border-style: solid;
+}
+.contactForm::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.contactForm textarea {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  background-color: #F6F6F6;
+  border-color: #F6F6F6;
+  border-style: solid;
+  height: 10rem;
+}
+.contactForm button {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.5px;
+  background-color: #FFF;
+  color: #64A604;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin: 0 auto;
   padding: 0.4rem 2.5rem;
 }

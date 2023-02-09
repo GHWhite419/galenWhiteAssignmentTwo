@@ -47,6 +47,10 @@ header {
     background-image: url('../assets/blog-1.jpeg');
 }
 
+.contactHeader {
+    background-image: url('../assets/contact-1.jpeg');
+}
+
 @media(max-width: 900px) {
     header {
         &.indexHeader {
@@ -55,6 +59,10 @@ header {
         
         &.blogHeader {
             background-position: -27rem;
+        }
+
+        &.contactHeader {
+            background-position: -38rem;
         }
 
         .navBar {

@@ -1,0 +1,45 @@
+@use "../variables.scss" as *;
+
+.contactForm {
+    input {
+        padding: .5rem;
+        width: 100%;
+        margin: .5rem 0rem;
+        font-family: $baseFont;
+        font-size: .7rem;
+        background-color: $secondary;
+        border-color: $secondary;
+        border-style: solid;
+    }
+
+    &::placeholder {
+        font-family: $baseFont;
+        font-size: .7rem;
+    }
+
+    textarea {
+        padding: .5rem;
+        width: 100%;
+        margin: .5rem 0rem;
+        font-family: $baseFont;
+        font-size: .7rem;
+        background-color: $secondary;
+        border-color: $secondary;
+        border-style: solid;
+        height: 10rem;
+    }
+
+    button {
+        @include bodyStyle;
+        background-color: #FFF;
+        color: $primary;
+        text-transform: uppercase;
+        display: block;
+        margin: 0 auto;
+        border-style: none;
+        font-size: .8rem;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: .4rem 2.5rem;
+    }
+}

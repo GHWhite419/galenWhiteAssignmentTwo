@@ -85,6 +85,9 @@ footer {
 
         ul {
             display: flex;
+            margin-top: 1rem;
+            padding-top: .5rem;
+            border-top: 1px solid $tertiary;
 
             li {
                 border-top: $footerColor;

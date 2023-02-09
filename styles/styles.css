@@ -546,6 +546,9 @@ footer .subscribe ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid #999999;
 }
 footer .subscribe ul li {
   border-top: #333;
@@ -828,6 +831,9 @@ footer .copyright span {
   text-transform: uppercase;
   font-size: 1.3rem;
 }
+.author p {
+  color: #333;
+}
 
 .related {
   margin-top: 2rem;
@@ -836,9 +842,6 @@ footer .copyright span {
   border-top: 1px solid #999999;
   border-bottom: 1px solid #999999;
   padding-top: 1rem;
-}
-.related .wrapper h2 {
-  text-align: center;
 }
 .related .wrapper li {
   margin: 1rem 0rem;
@@ -854,4 +857,79 @@ footer .copyright span {
   text-transform: capitalize;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+}
+
+.comments li {
+  background-color: #F6F6F6;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+.comments li img {
+  max-width: 4rem;
+}
+.comments li h3 {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+.comments li h3 span {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.comments li p {
+  color: #333;
+  margin-top: 0;
+}
+.comments li .postDate {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.comments .writeMessage h2 {
+  margin-top: 0;
+}
+.comments .writeMessage input {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0.5rem 0rem;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.comments .writeMessage input::-webkit-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.comments .writeMessage input::-moz-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.comments .writeMessage input:-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.comments .writeMessage input::-ms-input-placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.comments .writeMessage input::placeholder {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+}
+.comments .writeMessage .blogComment {
+  height: 10rem;
+}
+.comments .writeMessage button {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.5px;
+  background-color: #64A604;
+  color: #F6F6F6;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+  font-size: 0.6rem;
+  font-weight: 700;
+  margin: 1.5rem auto;
+  padding: 0.4rem 2.5rem;
 }

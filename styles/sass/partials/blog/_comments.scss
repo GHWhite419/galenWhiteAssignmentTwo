@@ -1,6 +1,71 @@
-<<<<<<< HEAD
 @use "../variables" as *;
 
-=======
-@use "../variables" as *;
->>>>>>> blogRelated
+.comments {
+    li {
+        background-color: $secondary;
+        padding: 1rem;
+        margin: 1rem 0rem;
+
+        img {
+            max-width: 4rem;
+        }
+
+        h3 {
+            font-size: .8rem;
+            margin-bottom: 0;
+
+            span {
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+        }
+
+        p {
+            color: $footerColor;
+            margin-top: 0;
+        }
+
+        .postDate {
+            font-family: $headingFont;
+            font-size: .6rem;
+            font-weight: 700;
+        }
+    }
+
+    .writeMessage {
+        h2 {
+            margin-top: 0;
+        }
+
+        input {
+            padding: .5rem;
+            width: 100%;
+            margin: .5rem 0rem;
+            font-family: $baseFont;
+            font-size: .7rem;
+
+            &::placeholder {
+                font-family: $baseFont;
+                font-size: .7rem;
+            }
+        }
+
+        .blogComment {
+            height: 10rem;
+        }
+
+        button {
+            @include bodyStyle;
+            background-color: $primary;
+            color: $secondary;
+            text-transform: uppercase;
+            display: block;
+            margin: 0 auto;
+            border-style: none;
+            font-size: .6rem;
+            font-weight: 700;
+            margin: 1.5rem auto;
+            padding: .4rem 2.5rem;
+        }
+    }
+}

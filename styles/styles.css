@@ -1003,3 +1003,38 @@ footer .copyright span {
   margin: 0 auto;
   padding: 0.4rem 2.5rem;
 }
+
+.contactDetails h3 {
+  text-transform: uppercase;
+}
+.contactDetails .hours h3 {
+  margin-bottom: 0.5rem;
+}
+.contactDetails .hours p {
+  margin: 0;
+}
+.contactDetails .hours p span {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.5px;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #333;
+}
+.contactDetails .hours em {
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.3px;
+  color: #999999;
+}
+.contactDetails li {
+  margin: 0.5rem 0rem;
+  font-family: "Lora", serif;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.3px;
+  color: #999999;
+}

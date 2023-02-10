@@ -54,58 +54,58 @@ article:last-child {
     }
 }
 
-@media (min-width: 900px) {
-    .recipes {
-        article {
-            display: flex;
+// @media (min-width: 900px) {
+//     .recipes {
+//         article {
+//             display: flex;
 
-            &:first-child {
-                flex-direction: row-reverse;
-                p {
-                    max-width: 80%;
-                    align-self: center;
-                }
-            }
+//             &:first-child {
+//                 flex-direction: row-reverse;
+//                 p {
+//                     max-width: 80%;
+//                     align-self: center;
+//                 }
+//             }
 
-            figure {
-                width: 50%;
-            }
+//             figure {
+//                 width: 50%;
+//             }
 
-            .wrapper {
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-            }
+//             .wrapper {
+//                 width: 50%;
+//                 display: flex;
+//                 flex-direction: column;
+//                 justify-content: center;
+//             }
 
-            ul {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                margin: 0;
-                height: 100%;
-                padding-left: 2rem;
+//             ul {
+//                 display: flex;
+//                 flex-wrap: wrap;
+//                 justify-content: space-evenly;
+//                 margin: 0;
+//                 height: 100%;
+//                 padding-left: 2rem;
 
-                li {
-                    width: 40%;
-                    position: relative;
+//                 li {
+//                     width: 40%;
+//                     position: relative;
 
-                    h3 {
-                        margin-bottom: 0;
-                    }
+//                     h3 {
+//                         margin-bottom: 0;
+//                     }
 
-                    i {
-                        position: absolute;
-                        left: -2.6rem;
-                        top: 1.1rem;
-                    }
+//                     i {
+//                         position: absolute;
+//                         left: -2.6rem;
+//                         top: 1.1rem;
+//                     }
 
-                    p {
-                        margin: 0;
-                        font-size: .6rem;
-                    }
-                }
-            }
-        }
-    }
-}
+//                     p {
+//                         margin: 0;
+//                         font-size: .6rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

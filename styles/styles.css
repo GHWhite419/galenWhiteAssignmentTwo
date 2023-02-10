@@ -946,6 +946,12 @@ footer .copyright span {
   padding: 0.4rem 2.5rem;
 }
 
+.contactForm {
+  margin-top: 2rem;
+}
+.contactForm h2 {
+  padding-top: 0;
+}
 .contactForm input {
   padding: 0.5rem;
   width: 100%;
@@ -1004,6 +1010,9 @@ footer .copyright span {
   padding: 0.4rem 2.5rem;
 }
 
+.contactDetails {
+  padding-top: 1rem;
+}
 .contactDetails h3 {
   text-transform: uppercase;
 }
@@ -1012,6 +1021,7 @@ footer .copyright span {
 }
 .contactDetails .hours p {
   margin: 0;
+  max-height: 1.4rem;
 }
 .contactDetails .hours p span {
   font-family: "Raleway", sans-serif;
@@ -1037,4 +1047,11 @@ footer .copyright span {
   line-height: 1.2rem;
   letter-spacing: 0.3px;
   color: #999999;
+}
+
+.banner {
+  background-image: url("../assets/contact-2.jpeg");
+  height: 32vh;
+  background-position: -58rem;
+  background-size: 40rem;
 }

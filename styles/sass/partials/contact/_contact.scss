@@ -1,6 +1,10 @@
 @use "../variables.scss" as *;
 
 .contactForm {
+    margin-top: 2rem;
+    h2 {
+        padding-top: 0;
+    }
     input {
         padding: .5rem;
         width: 100%;
@@ -42,4 +46,49 @@
         margin: 0 auto;
         padding: .4rem 2.5rem;
     }
+}
+
+.contactDetails {
+    padding-top: 1rem;
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    .hours {
+        h3 {
+            margin-bottom: .5rem;
+        }
+
+        p {
+            margin: 0;
+            max-height: 1.4rem;
+
+            span {
+                @include bodyStyle;
+                font-size: .6rem;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $footerColor;
+            }
+        }
+
+        em {
+            @include bodyText;
+            color: $tertiary;
+        }
+    }
+
+    li {
+        margin: .5rem 0rem;
+        @include bodyText;
+        color: $tertiary;
+    }
+}
+
+.banner {
+    background-image: url('../assets/contact-2.jpeg');
+    height: 32vh;
+    background-position: -58rem;
+    background-size: 40rem;
 }

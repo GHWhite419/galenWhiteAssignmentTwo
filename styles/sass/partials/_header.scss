@@ -34,6 +34,8 @@ header {
                 padding: .1rem .4rem;
                 font-size: .8rem;
                 font-family: $headingFont;
+                bottom: 0.2rem;
+                left: 1rem;
             }
         }
     }
@@ -41,65 +43,19 @@ header {
 
 .indexHeader {
     background-image: url('../assets/home-1.jpeg');
+    background-position: -34rem;
 }
 
 .blogHeader {
     background-image: url('../assets/blog-1.jpeg');
+    background-position: -27rem;
 }
 
 .contactHeader {
     background-image: url('../assets/contact-1.jpeg');
+    background-position: -38rem;
 }
 
-@media(max-width: 900px) {
-    header {
-        &.indexHeader {
-            background-position: -34rem;
-        }
-        
-        &.blogHeader {
-            background-position: -27rem;
-        }
-
-        &.contactHeader {
-            background-position: -38rem;
-        }
-
-        .navBar {
-            display: none;
-        }
-
-        span {
-            bottom: 0.2rem;
-            left: 1rem;
-        }
-    }
-}
-
-@media(min-width: 900px) {
-    header {
-        height: 100vh;
-
-        .navBar {
-            position: absolute;
-            right: 1rem;
-
-            ul {
-                display: flex;
-
-                li {
-                    padding-right: 1rem;
-
-                    span {
-                        top: .5rem;
-                        left: .2rem;
-                    }
-                }
-            }
-        }
-
-        .navMenuToggle {
-            display: none;
-        }
-    }
+.navBar {
+    display: none;
 }

@@ -376,62 +376,29 @@ header .wrapper li span {
   padding: 0.1rem 0.4rem;
   font-size: 0.8rem;
   font-family: "Raleway", sans-serif;
+  bottom: 0.2rem;
+  left: 1rem;
 }
 
 .indexHeader {
   background-image: url("../assets/home-1.jpeg");
+  background-position: -34rem;
 }
 
 .blogHeader {
   background-image: url("../assets/blog-1.jpeg");
+  background-position: -27rem;
 }
 
 .contactHeader {
   background-image: url("../assets/contact-1.jpeg");
+  background-position: -38rem;
 }
 
-@media (max-width: 900px) {
-  header.indexHeader {
-    background-position: -34rem;
-  }
-  header.blogHeader {
-    background-position: -27rem;
-  }
-  header.contactHeader {
-    background-position: -38rem;
-  }
-  header .navBar {
-    display: none;
-  }
-  header span {
-    bottom: 0.2rem;
-    left: 1rem;
-  }
+.navBar {
+  display: none;
 }
-@media (min-width: 900px) {
-  header {
-    height: 100vh;
-  }
-  header .navBar {
-    position: absolute;
-    right: 1rem;
-  }
-  header .navBar ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  header .navBar ul li {
-    padding-right: 1rem;
-  }
-  header .navBar ul li span {
-    top: 0.5rem;
-    left: 0.2rem;
-  }
-  header .navMenuToggle {
-    display: none;
-  }
-}
+
 footer {
   background-color: #333;
 }
@@ -1054,4 +1021,48 @@ footer .copyright span {
   height: 32vh;
   background-position: -58rem;
   background-size: 40rem;
+}
+
+@media (min-width: 520px) {
+  .indexHeader {
+    background-position: -6rem;
+  }
+}
+@media (min-width: 1000px) {
+  header .indexHeader {
+    background-position: -6rem;
+  }
+  header .navBar {
+    display: block;
+    position: absolute;
+    right: 1rem;
+  }
+  header .navBar ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .navBar ul li {
+    padding-right: 1rem;
+  }
+  header .navBar ul li span {
+    bottom: -0.5rem;
+    left: 0.2rem;
+  }
+  header .navMenuToggle {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .indexHeader {
+    background-position: 0;
+  }
+  .contactHeader {
+    background-position: -34rem;
+  }
+}
+@media (min-width: 1280px) {
+  header {
+    height: 100vh;
+  }
 }

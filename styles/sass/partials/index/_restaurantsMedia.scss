@@ -1,0 +1,23 @@
+@media (min-width: 520px) {
+    .restaurants {
+        padding: 5rem 0;
+        figure {
+            max-width: 520px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .restaurants {
+        .stamp {
+            max-width: 8rem;
+            top: -4rem;
+            right: -3rem;
+        }
+    }
+}

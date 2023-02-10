@@ -4,10 +4,17 @@
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 1rem;
+    figure {
+        max-width: 520px;
+        margin: 0 auto;
+    }
     .stamp {
         position: absolute;
         max-width: 5rem;
         top: -2rem;
         right: -1rem;
+    }
+    p {
+        max-width: 40rem;
     }
 }

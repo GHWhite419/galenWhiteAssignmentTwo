@@ -4,11 +4,15 @@
 
 @use "./partials/nav.scss"; // Stylings for nav menu and nav bar
 @use "./partials/header.scss"; // Header
+@use "./partials/headerMedia.scss"; // Responsive header
 @use "./partials/footer.scss"; // Footer
+@use "./partials/footerMedia.scss"; // Responsive footer
 
 // Home
 @use "./partials/index/recipes.scss"; // Recipes section
+@use "./partials/index/recipesMedia.scss"; // Recipes section
 @use "./partials/index/restaurants.scss"; // Our restaurants section
+@use "./partials/index/restaurantsMedia.scss"; // Our restaurants section
 @use "./partials/index/gallery.scss"; // Photo gallery
 @use "./partials/index/testimonial.scss"; // Hungry Clients
 
@@ -20,8 +24,3 @@
 
 // Contact
 @use "./partials/contact/contact.scss";
-
-// Media queries
-@use "./partials/media/headerMedia.scss"; // Responsive header
-@use "./partials/media/footerMedia.scss"; // Responsive footer
-@use "./partials/media/indexMedia.scss"; // Reponsive index

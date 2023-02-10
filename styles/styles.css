@@ -540,42 +540,13 @@ footer .copyright {
 }
 footer .copyright p {
   font-family: "Raleway", sans-serif;
+  text-align: center;
 }
 footer .copyright span {
   color: #64A604;
   text-transform: uppercase;
 }
 
-@media (max-width: 900px) {
-  .copyright p {
-    text-align: center;
-  }
-}
-@media (min-width: 900px) {
-  .footerContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footerContent ul {
-    width: 32%;
-    margin-top: 2rem;
-  }
-  .footerContent h2 {
-    padding-top: 0;
-    margin-top: 2rem;
-  }
-  .footerContent h3 {
-    margin-top: 0;
-  }
-  .footerContent .subscribe {
-    margin-top: 2rem;
-    width: 28%;
-  }
-}
 .recipes h2,
 .recipes p {
   text-align: center;
@@ -1064,5 +1035,33 @@ footer .copyright span {
 @media (min-width: 1280px) {
   header {
     height: 100vh;
+  }
+}
+@media (min-width: 750px) {
+  .footerContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerContent ul {
+    width: 32%;
+    margin-top: 2rem;
+  }
+  .footerContent h2 {
+    padding-top: 0;
+    margin-top: 2rem;
+  }
+  .footerContent h3 {
+    margin-top: 0;
+  }
+  .footerContent .subscribe {
+    margin-top: 2rem;
+    width: 28%;
+  }
+  footer .copyright p {
+    text-align: left;
   }
 }

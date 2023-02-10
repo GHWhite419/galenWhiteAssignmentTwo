@@ -5,7 +5,6 @@
 @use "./partials/nav.scss"; // Stylings for nav menu and nav bar
 @use "./partials/header.scss"; // Header
 @use "./partials/footer.scss"; // Footer
-@use "./partials/footerWide.scss"; // Footer on large screens
 
 // Home
 @use "./partials/index/recipes.scss"; // Recipes section
@@ -24,3 +23,4 @@
 
 // Media queries
 @use "./partials/media/headerMedia.scss"; // Responsive header
+@use "./partials/media/footerMedia.scss"; // Responsive footer

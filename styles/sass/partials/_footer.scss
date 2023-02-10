@@ -110,17 +110,12 @@ footer {
 
         p {
             font-family: $headingFont;
+            text-align: center;
         }
 
         span {
             color: $primary;
             text-transform: uppercase;
         }
-    }
-}
-
-@media (max-width: 900px) {
-    .copyright p {
-        text-align: center;
     }
 }

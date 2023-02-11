@@ -670,7 +670,7 @@ footer .copyright span {
   text-align: left;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .recipes article {
     padding-top: 1rem;
   }
@@ -806,10 +806,27 @@ footer .copyright span {
   }
 }
 .gallery ul {
-  margin-top: 0;
+  margin: 0;
   padding-bottom: 0;
 }
 
+@media (min-width: 520px) {
+  .gallery ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .gallery li {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .gallery li {
+    width: 33.3333333333%;
+  }
+}
 .testimonial {
   text-align: center;
   background-color: #DDED9A;
@@ -818,6 +835,10 @@ footer .copyright span {
 .testimonial h2 {
   margin: 0;
   padding: 1rem;
+}
+.testimonial p {
+  color: #2E2E2E;
+  font-style: italic;
 }
 .testimonial li {
   display: inline;
@@ -841,7 +862,26 @@ footer .copyright span {
   right: 0;
   font-size: 1.5rem;
 }
+.testimonial .activeArrow {
+  color: #FFF;
+}
 
+@media (min-width: 580px) {
+  .testimonial .quote {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+  .testimonial .quote .fa-quote-left {
+    top: -0.5rem;
+    left: -1rem;
+    font-size: 2.25rem;
+  }
+  .testimonial .quote .fa-quote-right {
+    bottom: -0.5rem;
+    right: -1rem;
+    font-size: 2.25rem;
+  }
+}
 .pineapple h2 {
   font-size: 2rem;
   line-height: 2rem;

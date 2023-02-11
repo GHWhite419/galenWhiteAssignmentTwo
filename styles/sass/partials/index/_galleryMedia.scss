@@ -1,0 +1,17 @@
+@media (min-width: 520px) {
+    .gallery {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li {
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    .gallery li {
+        width: calc(100% / 3);
+    }
+}

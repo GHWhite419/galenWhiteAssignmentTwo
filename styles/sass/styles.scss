@@ -10,11 +10,13 @@
 
 // Home
 @use "./partials/index/recipes.scss"; // Recipes section
-@use "./partials/index/recipesMedia.scss"; // Recipes section
+@use "./partials/index/recipesMedia.scss"; // Recipes - responsive
 @use "./partials/index/restaurants.scss"; // Our restaurants section
-@use "./partials/index/restaurantsMedia.scss"; // Our restaurants section
+@use "./partials/index/restaurantsMedia.scss"; // Our restaurants - responsive
 @use "./partials/index/gallery.scss"; // Photo gallery
+@use "./partials/index/galleryMedia.scss"; // Photo gallery - responsive
 @use "./partials/index/testimonial.scss"; // Hungry Clients
+@use "./partials/index/testimonialMedia.scss"; // Hungry Clients - responsive
 
 // Blog
 @use "./partials/blog/pineapple.scss"; // Pineapple Chicken section

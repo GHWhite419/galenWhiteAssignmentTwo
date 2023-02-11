@@ -10,6 +10,11 @@
         padding: 1rem;
     }
 
+    p {
+        color: $accent;
+        font-style: italic;
+    }
+
     li {
         display: inline;
         padding: 0rem .5rem;
@@ -35,5 +40,8 @@
             right: 0;
             font-size: 1.5rem;
         }
+    }
+    .activeArrow {
+        color: #FFF;
     }
 }

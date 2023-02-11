@@ -1,16 +1,16 @@
-@media (min-width: 580px) {
+@media (min-width: 650px) {
     .testimonial .quote {
         max-width: 25rem;
         margin: 0 auto;
         .fa-quote-left {
             top: -.5rem;
-            left: -1rem;
+            left: -3rem;
             font-size: 2.25rem;
         }
 
         .fa-quote-right {
             bottom: -.5rem;
-            right: -1rem;
+            right: -3rem;
             font-size: 2.25rem;
         }
     }

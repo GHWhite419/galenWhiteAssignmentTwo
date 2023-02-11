@@ -678,7 +678,7 @@ footer .copyright span {
     max-width: 375px;
     margin: 0 auto;
   }
-  p {
+  .recipes p {
     max-width: 20rem;
     margin: 1rem auto;
   }
@@ -795,7 +795,8 @@ footer .copyright span {
     margin-bottom: 2rem;
   }
   .restaurants p {
-    margin-bottom: 0;
+    margin: 0 auto;
+    margin-top: 1rem;
   }
 }
 @media (min-width: 650px) {
@@ -866,19 +867,19 @@ footer .copyright span {
   color: #FFF;
 }
 
-@media (min-width: 580px) {
+@media (min-width: 650px) {
   .testimonial .quote {
     max-width: 25rem;
     margin: 0 auto;
   }
   .testimonial .quote .fa-quote-left {
     top: -0.5rem;
-    left: -1rem;
+    left: -3rem;
     font-size: 2.25rem;
   }
   .testimonial .quote .fa-quote-right {
     bottom: -0.5rem;
-    right: -1rem;
+    right: -3rem;
     font-size: 2.25rem;
   }
 }
@@ -939,7 +940,7 @@ footer .copyright span {
 }
 .author article {
   background-color: #F6F6F6;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
 }
 .author h2 {
   text-transform: uppercase;
@@ -949,6 +950,23 @@ footer .copyright span {
   color: #333;
 }
 
+@media (min-width: 1080px) {
+  .author .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .author .wrapper figure {
+    padding-top: 0;
+  }
+  .author .wrapper article {
+    width: 80%;
+    text-align: left;
+  }
+}
 .related {
   margin-top: 2rem;
 }
@@ -957,22 +975,57 @@ footer .copyright span {
   border-bottom: 1px solid #999999;
   padding-top: 1rem;
 }
-.related .wrapper li {
+.related .wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.related .wrapper ul li {
   margin: 1rem 0rem;
 }
-.related .wrapper li h3 {
+.related .wrapper ul li h3 {
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.related .wrapper li p {
+.related .wrapper ul li p {
   margin: 0;
 }
-.related .wrapper li span {
+.related .wrapper ul li span {
   text-transform: capitalize;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
+.related img {
+  max-width: 520px;
+}
 
+@media (min-width: 930px) {
+  .related .wrapper ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .related .wrapper ul li {
+    width: calc(33.3333333333% - 0.75rem);
+  }
+  .related .wrapper ul li h3 {
+    font-size: 0.7rem;
+  }
+  .related .wrapper ul li p {
+    font-size: 0.6rem;
+  }
+}
 .comments li {
   background-color: #F6F6F6;
   padding: 1rem;

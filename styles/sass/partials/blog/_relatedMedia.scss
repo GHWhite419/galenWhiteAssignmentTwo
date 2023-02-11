@@ -1,0 +1,15 @@
+@media (min-width: 930px) {
+    .related .wrapper ul {
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+            width: calc(100% / 3 - .75rem);
+            h3 {
+                font-size: .7rem;
+            }
+            p {
+                font-size: .6rem;
+            }
+        }
+    }
+}

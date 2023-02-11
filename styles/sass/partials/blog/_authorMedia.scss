@@ -1,0 +1,13 @@
+@media (min-width: 1080px) {
+    .author .wrapper {
+        display: flex;
+        justify-content: space-between;
+        figure {
+            padding-top: 0;
+        }
+        article {
+            width: 80%;
+            text-align: left;
+        }
+    }
+}

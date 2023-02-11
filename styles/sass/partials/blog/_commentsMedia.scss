@@ -1,0 +1,68 @@
+@use "../variables.scss" as *;
+
+@media (min-width: 650px) {
+    .comments {
+        img {
+            width: 4rem;
+        }
+
+        li {
+            background-color: transparent;
+            display: flex;
+
+            .speechBubble {
+                background-color: $secondary;
+                padding: .5rem 1rem;
+                margin-left: 2rem;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    z-index: 1;
+                    border-style: solid;
+                    border-color: transparent #f6f6f6;
+                    border-width: 15px 20px 15px 0;
+                    top: 20%;
+                    left: -20px;
+                    margin-top: -15px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 520px) {
+    .comments .writeMessage form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        input {
+            width: calc(100% / 2 - .5rem);
+        }
+
+        .blogWebsite,
+        .blogComment {
+            width: 100%;
+        }
+        button {
+            margin: 1.5rem 0;
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .comments .writeMessage form {
+
+        input, .blogWebsite {
+            width: calc(100% / 3 - .5rem);
+        }
+
+        .blogComment {
+            width: 100%;
+        }
+    }
+}

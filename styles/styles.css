@@ -1006,6 +1006,24 @@ footer .copyright span {
   max-width: 520px;
 }
 
+@media (min-width: 650px) {
+  .related .wrapper ul {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .related .wrapper ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .related .wrapper ul li figure, .related .wrapper ul li .postText {
+    width: 45%;
+  }
+}
 @media (min-width: 930px) {
   .related .wrapper ul {
     -webkit-box-orient: horizontal;
@@ -1018,6 +1036,13 @@ footer .copyright span {
   }
   .related .wrapper ul li {
     width: calc(33.3333333333% - 0.75rem);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .related .wrapper ul li figure, .related .wrapper ul li .postText {
+    width: auto;
   }
   .related .wrapper ul li h3 {
     font-size: 0.7rem;

@@ -1,9 +1,26 @@
+@media (min-width: 650px) {
+    .related .wrapper ul {
+       align-items: normal; 
+       li {
+        display: flex;
+        justify-content: space-between;
+        figure, .postText {
+            width: 45%;
+        }
+       }
+    }
+}
+
 @media (min-width: 930px) {
     .related .wrapper ul {
         flex-direction: row;
         justify-content: space-between;
         li {
             width: calc(100% / 3 - .75rem);
+            flex-direction: column;
+            figure, .postText {
+                width: auto;
+            }
             h3 {
                 font-size: .7rem;
             }

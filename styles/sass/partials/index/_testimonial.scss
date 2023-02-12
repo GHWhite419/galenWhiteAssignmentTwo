@@ -43,5 +43,8 @@
     }
     .activeArrow {
         color: #FFF;
+        &:active, &:hover, &:focus {
+            color: $primary;
+        }
     }
 }

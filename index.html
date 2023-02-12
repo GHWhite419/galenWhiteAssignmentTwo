@@ -37,11 +37,18 @@
                     <li><a href="">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li>
-                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-                        <span>2</span>
+                        <a href="">
+                            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                            <span class="sr-only">Store</span>
+                        </a>
+                        <span aria-hidden="true">2</span>
+                        <span class="sr-only">2 items in shopping cart</span>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="sr-only">Search</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -57,11 +64,18 @@
                     <li><a href="">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li>
-                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-                        <span>2</span>
+                        <a href="">
+                            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                            <span class="sr-only">Store</span>
+                        </a>
+                        <span aria-hidden="true">2</span>
+                        <span class="sr-only">2 items in shopping cart</span>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="sr-only">Search</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -93,7 +107,7 @@
                         <li>
                             <div class="recipeCategory">
                                 <h3>Vegetarian</h3>
-                                <i class="fa-solid fa-lemon fa-fw"></i>
+                                <i class="fa-solid fa-lemon fa-fw" aria-hidden="true"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quas cupiditate ratione
                                 esse ipsam est deleniti laboriosam quia necessitatibus.</p>
@@ -101,7 +115,7 @@
                         <li>
                             <div class="recipeCategory">
                                 <h3>Appetizers</h3>
-                                <i class="fa-solid fa-utensils fa-fw"></i>
+                                <i class="fa-solid fa-utensils fa-fw" aria-hidden="true"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quas cupiditate ratione
                                 esse ipsam est deleniti laboriosam quia necessitatibus.</p>
@@ -109,7 +123,7 @@
                         <li>
                             <div class="recipeCategory">
                                 <h3>Desserts</h3>
-                                <i class="fa-solid fa-mug-saucer fa-fw"></i>
+                                <i class="fa-solid fa-mug-saucer fa-fw" aria-hidden="true"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quas cupiditate ratione
                                 esse ipsam est deleniti laboriosam quia necessitatibus.</p>
@@ -117,7 +131,7 @@
                         <li>
                             <div class="recipeCategory">
                                 <h3>Drinks</h3>
-                                <i class="fa-solid fa-martini-glass fa-fw"></i>
+                                <i class="fa-solid fa-martini-glass fa-fw" aria-hidden="true"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quas cupiditate ratione
                                 esse ipsam est deleniti laboriosam quia necessitatibus.</p>
@@ -125,7 +139,7 @@
                         <li>
                             <div class="recipeCategory">
                                 <h3>Salads</h3>
-                                <i class="fa-solid fa-leaf fa-fw"></i>
+                                <i class="fa-solid fa-leaf fa-fw" aria-hidden="true"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quas cupiditate ratione
                                 esse ipsam est deleniti laboriosam quia necessitatibus.</p>
@@ -133,7 +147,7 @@
                         <li>
                             <div class="recipeCategory">
                                 <h3>Side dishes</h3>
-                                <i class="fa-solid fa-spoon fa-fw"></i>
+                                <i class="fa-solid fa-spoon fa-fw" aria-hidden="true"></i>
                             </div>
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, quas cupiditate ratione
                                 esse ipsam est deleniti laboriosam quia necessitatibus.</p>
@@ -179,15 +193,20 @@
                 <h2>Hungry clients</h2>
                 <hr>
                 <div class="quote">
-                    <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    <i class="fa-sharp fa-solid fa-quote-left" aria-hidden="true"></i>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, blanditiis molestiae laudantium
                         harum veniam sapiente eveniet non quo, quibusdam dolorem sed illo fuga soluta fugiat, quisquam
                         neque odio in. Incidunt.</p>
-                    <i class="fa-sharp fa-solid fa-quote-right"></i>
+                    <i class="fa-sharp fa-solid fa-quote-right" aria-hidden="true"></i>
                 </div>
                 <ul>
-                    <li><i class="fa-solid fa-angle-left"></i></li>
-                    <li><i class="fa-solid fa-angle-right activeArrow"></i></li>
+                    <li>
+                        <i class="fa-solid fa-angle-left" aria-hidden="true"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-angle-right activeArrow" aria-hidden="true"></i>
+                        <span class="sr-only">Next comment</span>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -223,20 +242,25 @@
                 <h3>Subscribe now</h3>
                 <p>Get all of our newest recipes immediately in your inbox!</p>
                 <form action="">
-                    <input type="email" placeholder="Enter your email">
+                    <label for="foooterEmail" class="sr-only">Enter your email</label>
+                    <input id="footerEmail" type="email" placeholder="Enter your email">
                     <button type="button">
-                        <i class="fa-sharp fa-solid fa-right-long"></i>
+                        <i class="fa-sharp fa-solid fa-right-long" aria-hidden="true"></i>
+                        <span class="sr-only">Submit</span>
                     </button>
                 </form>
                 <ul>
                     <li>
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
                     </li>
                     <li>
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
                     </li>
                     <li>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
                     </li>
                 </ul>
             </div>

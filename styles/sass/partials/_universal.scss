@@ -32,7 +32,7 @@ hr {
     border: 2px solid;
 }
 
-button:active {
+button:active, button:hover, button:focus {
     filter: brightness(1.1);
 }
 
@@ -64,7 +64,21 @@ a {
     color: $accent;
     font-weight: 700;
 
-    &:active {
+    &:active, &:hover {
+        color: $primary;
+    }
+    &:focus {
+        color: $primary;
+        outline: none;
+    }
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+.fa-brands {
+    &:active, &:hover, &:focus {
         color: $primary;
     }
 }

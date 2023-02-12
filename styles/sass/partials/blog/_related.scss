@@ -18,6 +18,9 @@
                 h3 {
                     text-transform: uppercase;
                     margin-bottom: 0;
+                    &:active, &:hover, &:focus {
+                        color: $primary;
+                    }
                 }
 
                 p {
@@ -28,6 +31,9 @@
                     text-transform: capitalize;
                     font-family: $headingFont;
                     font-weight: 700;
+                    &:active, &:hover, &:focus {
+                        color: $primary;
+                    }
                 }
             }
         }

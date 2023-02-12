@@ -38,6 +38,9 @@
                 font-size: .7rem;
                 color: $tertiary;
                 padding: .1rem;
+                &:active, &:hover, &:focus {
+                    color: $primary;
+                }
                 i {
                     padding: .5rem;
                 }

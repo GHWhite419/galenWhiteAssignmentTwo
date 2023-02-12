@@ -37,11 +37,18 @@
                     <li><a href="">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li>
-                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-                        <span>2</span>
+                        <a href="">
+                            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                            <span class="sr-only">Store</span>
+                        </a>
+                        <span aria-hidden="true">2</span>
+                        <span class="sr-only">2 items in shopping cart</span>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="sr-only">Search</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -57,11 +64,18 @@
                     <li><a href="">Shop</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                     <li>
-                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
-                        <span>2</span>
+                        <a href="">
+                            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                            <span class="sr-only">Store</span>
+                        </a>
+                        <span aria-hidden="true">2</span>
+                        <span class="sr-only">2 items in shopping cart</span>
                     </li>
                     <li>
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span class="sr-only">Search</span>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -110,13 +124,16 @@
                     <ul>
                         <h3>Share:</h3>
                         <li>
-                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
                         </li>
                         <li>
-                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
                         </li>
                         <li>
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
                         </li>
                     </ul>
                 </div>
@@ -182,7 +199,7 @@
                     <li>
                         <figure><img src="./assets/blog-6.jpeg" aria-hidden="true"></figure>
                         <div class="speechBubble">
-                            <h3>Lucatony Avaro - <span>Web developer</span></h3>
+                            <h3><span>Lucatony Avaro</span> - Web developer</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed beatae placeat!
                                 Animi sequi illo ipsa asperiores atque quas laudantium.</p>
                             <p class="postDate">July 17, 2015 at 15 hours ago</p>
@@ -191,7 +208,7 @@
                     <li>
                         <figure><img src="./assets/blog-7.jpeg" aria-hidden="true"></figure>
                         <div class="speechBubble">
-                            <h3>Brian Hudson - <span>Web developer</span></h3>
+                            <h3><span>Brian Hudson</span> - Web developer</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed beatae placeat!
                                 Animi sequi illo ipsa asperiores atque quas laudantium.</p>
                             <p class="postDate">July 17, 2015 at 15 hours ago</p>
@@ -202,11 +219,13 @@
                     <h2>Leave a comment</h2>
                     <p>Your email address will not be published. Required fields are marked *</p>
                     <form action="">
+                        <label for="blogName" class="sr-only">Enter your name.</label>
                         <input type="text" placeholder="Name *" id="blogName" class="blogName">
+                        <label for="blogEmail" class="sr-only">Enter your email.</label>
                         <input type="email" placeholder="Email *" id="blogEmail" class="blogEmail">
+                        <label for="blogWebsite" class="sr-only">Enter your website.</label>
                         <input type="text" placeholder="Your website" id="blogWebsite" class="blogWebsite">
-                        <!-- <input type="text" placeholder="Comment" id="blogComment" class="blogComment"> -->
-
+                        <label for="blogComment" class="sr-only">Please write your comment.</label>
                         <textarea name="blogComment" id="blogComment" class="blogComment"
                             placeholder="Comment"></textarea>
                         <button type="button">Submit comment</button>
@@ -246,20 +265,25 @@
                 <h3>Subscribe now</h3>
                 <p>Get all of our newest recipes immediately in your inbox!</p>
                 <form action="">
-                    <input type="email" placeholder="Enter your email">
+                    <label for="foooterEmail" class="sr-only">Enter your email</label>
+                    <input id="footerEmail" type="email" placeholder="Enter your email">
                     <button type="button">
-                        <i class="fa-sharp fa-solid fa-right-long"></i>
+                        <i class="fa-sharp fa-solid fa-right-long" aria-hidden="true"></i>
+                        <span class="sr-only">Submit</span>
                     </button>
                 </form>
                 <ul>
                     <li>
-                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook</span>
                     </li>
                     <li>
-                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-twitter" aria-hidden="true"></i>
+                        <span class="sr-only">Twitter</span>
                     </li>
                     <li>
-                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        <span class="sr-only">Instagram</span>
                     </li>
                 </ul>
             </div>

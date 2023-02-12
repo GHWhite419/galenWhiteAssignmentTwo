@@ -28,4 +28,5 @@
 @use "./partials/blog/commentsMedia.scss"; // Comments - responsive
 
 // Contact
-@use "./partials/contact/contact.scss";
+@use "./partials/contact/contact.scss"; // Contact - mobile-first
+@use "./partials/contact/contactMedia.scss"; // Contact - responsive

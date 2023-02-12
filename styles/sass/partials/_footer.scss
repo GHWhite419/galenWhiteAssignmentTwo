@@ -36,7 +36,7 @@ footer {
     }
 
     ul:last-of-type {
-        li:active {
+        li:active, li:hover, li:focus {
             color: $primary;
         }
 
@@ -65,10 +65,6 @@ footer {
                     color: $secondary;
                     font-size: .6rem;
                     font-style: italic;
-                }
-
-                &:focus {
-                    outline: none;
                 }
             }
 

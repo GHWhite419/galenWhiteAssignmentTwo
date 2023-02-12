@@ -1,0 +1,54 @@
+@media (min-width: 440px) {
+    .banner {
+        background-position: -40rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .contact {
+        display: flex;
+
+        .contactForm {
+            width: 60%;
+            padding-left: 10%;
+
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                h2 {
+                    width: 100%;
+                }
+
+                button {
+                    margin: .5rem 0;
+                    padding-left: 0;
+                }
+            }
+
+            .contactName,
+            .contactEmail {
+                width: calc(100% /2 - .5rem);
+            }
+
+        }
+
+        .contactDetails {
+            padding-right: 10%;
+            width: 40%;
+        }
+    }
+
+    .banner {
+        background-position: -5rem;
+        background-size: 64rem;
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1180px) {
+    .banner {
+        background-position: 0;
+    }
+}

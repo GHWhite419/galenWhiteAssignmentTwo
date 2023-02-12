@@ -343,6 +343,18 @@ input:focus, textarea:focus {
   top: 0.6rem;
   left: 0.6rem;
 }
+.navMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 100%;
+}
 .navMenu li {
   padding: 0.8rem;
 }
@@ -404,7 +416,7 @@ header .wrapper li span {
 
 .contactHeader {
   background-image: url("../assets/contact-1.jpeg");
-  background-position: -38rem;
+  background-position: -53rem;
 }
 
 .navBar {
@@ -414,6 +426,11 @@ header .wrapper li span {
 @media (min-width: 520px) {
   .indexHeader {
     background-position: -6rem;
+  }
+}
+@media (orientation: landscape) {
+  .indexHeader, .blogHeader, .contactHeader {
+    background-position: 0;
   }
 }
 @media (min-width: 1000px) {
@@ -450,6 +467,11 @@ header .wrapper li span {
   }
   .contactHeader {
     background-position: -34rem;
+  }
+}
+@media (min-width: 1080px) and (orientation: landscape) {
+  .contactHeader {
+    background-position: 0;
   }
 }
 footer {

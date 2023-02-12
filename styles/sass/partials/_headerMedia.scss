@@ -4,6 +4,11 @@
     }
 }
 
+@media(orientation: landscape) {
+    .indexHeader, .blogHeader, .contactHeader {
+        background-position: 0;
+    }
+}
 
 @media(min-width: 1000px) {
     header {
@@ -33,6 +38,7 @@
         .navMenuToggle {
             display: none;
         }
+
         .navMenu {
             display: none;
         }
@@ -43,8 +49,15 @@
     .indexHeader {
         background-position: 0
     }
+
     .contactHeader {
         background-position: -34rem;
     }
 
+}
+
+@media(min-width: 1080px) and (orientation: landscape) {
+    .contactHeader {
+        background-position: 0;
+    }
 }

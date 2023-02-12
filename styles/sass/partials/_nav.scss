@@ -19,6 +19,13 @@
         left: .6rem;
     }
 
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 100%;
+    }
+
     li {
         padding: .8rem;
     }

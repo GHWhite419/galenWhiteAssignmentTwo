@@ -353,7 +353,7 @@ input:focus, textarea:focus {
 }
 
 header {
-  height: 75vh;
+  height: 100vh;
   background-size: cover;
 }
 header .wrapper {
@@ -450,11 +450,6 @@ header .wrapper li span {
   }
   .contactHeader {
     background-position: -34rem;
-  }
-}
-@media (min-width: 1280px) {
-  header {
-    height: 100vh;
   }
 }
 footer {

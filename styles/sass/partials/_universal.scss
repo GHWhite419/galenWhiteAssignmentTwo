@@ -82,3 +82,7 @@ input:focus, textarea:focus {
         color: $primary;
     }
 }
+
+textarea {
+    resize: none;
+}

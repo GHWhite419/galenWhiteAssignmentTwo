@@ -7,6 +7,19 @@
     }
     .galleryImages {
         position: relative;
+        li {
+            transition: 0.2s linear;
+            width: 0;
+        }
+        .currentImage {
+            width: auto;
+        }
+        .previousImage {
+            transform: translateX(-20rem);
+        }
+        .nextImage {
+            transform: translateX(20rem);
+        }
     }
     .galleryButtons {
         display: flex;

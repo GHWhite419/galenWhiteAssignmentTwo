@@ -1,17 +1,18 @@
 @media (min-width: 520px) {
     .gallery {
-        ul {
+        .galleryImages {
             display: flex;
             flex-wrap: wrap;
-        }
-        li {
-            width: 50%;
+            li {
+                width: 50%;
+                position: static;
+            }
         }
     }
 }
 
 @media (min-width: 1000px) {
-    .gallery li {
+    .gallery .galleryImages li {
         width: calc(100% / 3);
     }
 }

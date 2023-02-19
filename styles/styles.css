@@ -846,6 +846,22 @@ footer .copyright span {
 .gallery .galleryImages {
   position: relative;
 }
+.gallery .galleryImages li {
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  width: 0;
+}
+.gallery .galleryImages .currentImage {
+  width: auto;
+}
+.gallery .galleryImages .previousImage {
+  -webkit-transform: translateX(-20rem);
+          transform: translateX(-20rem);
+}
+.gallery .galleryImages .nextImage {
+  -webkit-transform: translateX(20rem);
+          transform: translateX(20rem);
+}
 .gallery .galleryButtons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -857,19 +873,20 @@ footer .copyright span {
 }
 
 @media (min-width: 520px) {
-  .gallery ul {
+  .gallery .galleryImages {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .gallery li {
+  .gallery .galleryImages li {
     width: 50%;
+    position: static;
   }
 }
 @media (min-width: 1000px) {
-  .gallery li {
+  .gallery .galleryImages li {
     width: 33.3333333333%;
   }
 }

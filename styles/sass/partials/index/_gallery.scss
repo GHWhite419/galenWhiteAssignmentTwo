@@ -5,4 +5,12 @@
         margin: 0;
         padding-bottom: 0;
     }
+    .galleryImages {
+        position: relative;
+    }
+    .galleryButtons {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+    }
 }

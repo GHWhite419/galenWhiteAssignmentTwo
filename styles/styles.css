@@ -847,8 +847,8 @@ footer .copyright span {
   position: relative;
 }
 .gallery .galleryImages li {
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
   width: 0;
 }
 .gallery .galleryImages .currentImage {
@@ -880,14 +880,28 @@ footer .copyright span {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .gallery .galleryImages li {
+  .gallery .galleryImages li,
+  .gallery .galleryImages .currentImage {
     width: 50%;
     position: static;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .gallery .galleryImages .previousImage,
+  .gallery .galleryImages .nextImage {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .gallery .galleryButtons {
+    display: none;
   }
 }
 @media (min-width: 1000px) {
-  .gallery .galleryImages li {
+  .gallery .galleryImages li,
+  .gallery .galleryImages .currentImage {
     width: 33.3333333333%;
+    -webkit-transition: none;
+    transition: none;
   }
 }
 .testimonial {

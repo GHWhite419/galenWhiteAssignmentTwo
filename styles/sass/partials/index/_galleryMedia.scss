@@ -3,16 +3,31 @@
         .galleryImages {
             display: flex;
             flex-wrap: wrap;
-            li {
+
+            li,
+            .currentImage {
                 width: 50%;
                 position: static;
+                transition: none;
             }
+
+            .previousImage,
+            .nextImage {
+                transform: none;
+            }
+        }
+        .galleryButtons {
+            display: none;
         }
     }
 }
 
 @media (min-width: 1000px) {
-    .gallery .galleryImages li {
-        width: calc(100% / 3);
+    .gallery .galleryImages {
+        li,
+        .currentImage {
+            width: calc(100% / 3);
+            transition: none;
+        }
     }
 }
